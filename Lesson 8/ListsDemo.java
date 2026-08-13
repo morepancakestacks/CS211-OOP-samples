@@ -12,23 +12,20 @@ class ListsDemo {
 
         list.add(3, "" + 18);
         list.add(5, "" + 249);
-
         System.out.println("List elements: ");
         int i = 0;
         for (Iterator <String> iter = list.iterator(); iter.hasNext(); i++) {
             String item = iter.next();
             System.out.println("Element " + i + ": " + item);
         }
-
         list.remove("18");
-        list.remove("30");
-        list.remove("20");
-
-        System.out.println("\n\nAfter remove: ");
-        i = 0;
-        for (Iterator <String> iter = list.iterator(); iter.hasNext(); i++) {
-            String item = iter.next();
-            System.out.println("Element " + i + ": " + item);
+        System.out.println();
+        System.out.println("Is the element existing?");
+        if(list.contains("18")) {
+            System.out.println("Element found!");
+        } else {
+            System.out.println("Element not found!");
         }
     }
+        
 }

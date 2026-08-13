@@ -1,5 +1,5 @@
 # OBJECT-ORIENTED PROGRAMMING
-![CS-211](https://github.com/user-attachments/assets/ebf8983e-81e1-4280-862e-34c90986a0cb)
+![CS-211](oop-repo.png)
 <br/>
 by: **Fatima Marie P. Agdon, MSCS**<br>
 Note: This is an ongoing repository. Updates will be posted as the course progresses.
