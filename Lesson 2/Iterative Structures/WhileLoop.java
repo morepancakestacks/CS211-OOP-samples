@@ -13,5 +13,4 @@ class WhileLoop {
         System.out.println("Sum from 1 to " + up_bound + " = " + sum);
         value.close();
     }
-
 }

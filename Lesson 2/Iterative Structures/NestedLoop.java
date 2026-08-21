@@ -8,7 +8,7 @@ class NestedLoop{
 
             //inner loop prints weeks
             for(int wctr = 1; wctr <= weeks; wctr++){
-                System.out.println("Week: " + wctr);
+                System.out.println("\tWeek: " + wctr);
             }
         }
    }
