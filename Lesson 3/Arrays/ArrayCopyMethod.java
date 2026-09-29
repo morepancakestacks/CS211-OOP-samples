@@ -8,7 +8,11 @@ class ArrayCopyMethod{
                           "Kierra", "Shan"
                         };
         String[] destination = new String[2];
-        System.arraycopy(source, 6, destination, 0, 2);
+        System.arraycopy(source, 1, destination, 2, 3);
+                        // (source, sourcePosition, destination, destinationPosition, no. of elements)
+        destination[0] = "Nanno";
+       // destination[1] = "Gwy";
+        //destination[5] = "Shan";
 
         boolean isFirst = true;
         for(String character : destination){

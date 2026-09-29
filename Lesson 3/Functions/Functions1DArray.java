@@ -1,19 +1,18 @@
 public class Functions1DArray {
 	public static void main(String[] args) {
 		int[] arr = {9, 18, 27, 36, 45};
-		int multiplier = 5;
+		int multiplier = 10;
 
 		System.out.print("Original Array: ");
 		printArray(arr);
 
-		// calling the method to add a constant value to the elements
-		multiplyToFive(arr, multiplier);
+		multiplyToNumber(arr, multiplier);
 
 		System.out.print("\nModified Array: ");
 		printArray(arr);
 	}
 
-	public static void multiplyToFive(int[] arr, int multiplier) {
+	public static void multiplyToNumber(int[] arr, int multiplier) {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] *= multiplier;
             //multiples the elements
@@ -28,10 +27,3 @@ public class Functions1DArray {
         //prints the arrays
 	}
 }
-
-// Output:
-/*
-Original Array: 1 2 3 4 5 
-
-Modified Array: 5 10 15 20 25 
-*/

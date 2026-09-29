@@ -4,8 +4,8 @@ class GetFactorial{
             Scanner input = new Scanner(System.in);
             System.out.print("Enter a number: ");
             int value = input.nextInt();
-            int fct = factorial(value);
-            System.out.println("Factorial of " + value + " is: " + fct);
+            int result = factorial(value);
+            System.out.println("Factorial of " + value + " is: " + result);
             input.close();
     }
 

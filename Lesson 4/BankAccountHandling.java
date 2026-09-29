@@ -1,4 +1,7 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.InputMismatchException;
+
 class BankAccountHandling {
     // Custom Exception Class
     static class InsufficientBalanceException extends Exception {
@@ -35,12 +38,16 @@ class BankAccountHandling {
 
             withdraw(balance, amount);
         }
-        catch (InsufficientBalanceException e) {
+
+       catch (InsufficientBalanceException e) {
             System.out.println(e.getMessage());
+        }
+        catch(InputMismatchException e) {
+            System.out.println("Invalid input!");
         }
         catch (Exception e) {
             // General exception
-            System.out.println("Something went wrong: " + e.getMessage());
+            System.out.println("Something went wrong: ");
         }
         finally {
             input.close();
